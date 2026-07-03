@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="referrer" content="no-referrer">
+  <meta name="description" content="VERUNGLXCKT // gamer profile terminal">
+  <title>VERUNGLXCKT // profile.exe</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=VT323&family=Press+Start+2P&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='80' font-size='80' fill='%2339ff14'>X</text></svg>">
+</head>
+<body>
+
+  <!-- ══════════ BOOT SCREEN ══════════ -->
+  <div id="boot" aria-hidden="true">
+    <pre id="boot-log"></pre>
+  </div>
+
+  <!-- ══════════ CRT OVERLAYS ══════════ -->
+  <div class="crt-scanlines" aria-hidden="true"></div>
+  <div class="crt-vignette" aria-hidden="true"></div>
+
+  <div class="page">
+
+    <!-- ══════════ HEADER ══════════ -->
+    <header class="site-header">
+      <div class="header-top">
+        <span class="sys-tag" data-i18n="sys.online">[ SYSTEM ONLINE ]</span>
+        <nav class="lang-switch" aria-label="Language">
+          <button id="lang-de" class="lang-btn" type="button">DE</button>
+          <span class="lang-sep">/</span>
+          <button id="lang-en" class="lang-btn" type="button">EN</button>
+        </nav>
+      </div>
+
+      <h1 class="glitch" data-text="VERUNGLXCKT">VERUNGLXCKT</h1>
+      <p class="aka">aka <span class="aka-name">BERMSHRED</span> <span class="blink">▮</span></p>
+
+      <div class="ticker-wrap" aria-hidden="true">
+        <div class="ticker" id="ticker"></div>
+      </div>
+    </header>
+
+    <main>
+
+      <!-- ══════════ STATS BAR ══════════ -->
+      <section class="stats-bar" id="stats">
+        <div class="stat">
+          <span class="stat-label" data-i18n="stats.age">AGE</span>
+          <span class="stat-value">20</span>
+        </div>
+        <div class="stat">
+          <span class="stat-label" data-i18n="stats.loc">LOCATION</span>
+          <span class="stat-value" data-i18n="stats.locval">NORDDEUTSCHLAND</span>
+        </div>
+        <div class="stat">
+          <span class="stat-label" data-i18n="stats.os">DAILY DRIVER</span>
+          <span class="stat-value">LINUX</span>
+        </div>
+        <div class="stat">
+          <span class="stat-label" data-i18n="stats.status">STATUS</span>
+          <span class="stat-value stat-online" data-i18n="stats.statusval">AM GRINDEN</span>
+        </div>
+      </section>
+
+      <!-- ══════════ BIO ══════════ -->
+      <section class="panel" id="bio">
+        <h2 class="panel-title"><span class="prompt">&gt;</span> <span data-i18n="bio.title">whoami</span></h2>
+        <p class="panel-text" data-i18n="bio.text">
+          Norddeutscher IT-Student mit Passion für Linux und Natur. Viel am PC
+          (arbeits- und hobbybedingt), der Ausgleich läuft über MTB und
+          Motorradfahren. Ich habe zwar ein cooles 2-in-1-Notebook, schreibe aber
+          trotzdem lieber auf Papier. Mit meinem Rotring 600, versteht sich.
+        </p>
+      </section>
+
+      <!-- ══════════ NAME LORE ══════════ -->
+      <section class="panel" id="lore">
+        <h2 class="panel-title"><span class="prompt">&gt;</span> <span data-i18n="lore.title">cat name_lore.txt</span></h2>
+        <p class="panel-text" data-i18n="lore.text1">
+          Der Name Verunglxckt stammt noch aus der Minecraft-Zeit, als ein X in
+          normalen Wörtern das Coolste überhaupt war. So ist Verunglxckt
+          entstanden, und seitdem heiße ich in fast jedem Spiel so.
+        </p>
+        <p class="panel-text" data-i18n="lore.text2">
+          Gelegentlich findet man mich auch unter Bermshred, z.&nbsp;B. auf Twitch,
+          weil englischsprachige Streamer an dem deutschen Wort „verunglückt“
+          regelmäßig verunglückt sind.
+        </p>
+      </section>
+
+      <!-- ══════════ RANKS ══════════ -->
+      <section class="panel" id="ranks">
+        <h2 class="panel-title"><span class="prompt">&gt;</span> <span data-i18n="ranks.title">./peak_ranks --comp</span></h2>
+        <div class="rank-table">
+          <div class="rank-row rank-head">
+            <span data-i18n="ranks.game">GAME</span>
+            <span data-i18n="ranks.peak">PEAK</span>
+            <span data-i18n="ranks.status">STATUS</span>
+          </div>
+          <div class="rank-row">
+            <span class="rank-game">ROCKET LEAGUE</span>
+            <span class="rank-peak rank-rl">CHAMP 2</span>
+            <span class="rank-status status-ice" data-i18n="ranks.ice">AUF EIS</span>
+          </div>
+          <div class="rank-row">
+            <span class="rank-game">VALORANT</span>
+            <span class="rank-peak rank-valo">IMMORTAL 1</span>
+            <span class="rank-status status-ice" data-i18n="ranks.ice2">AUF EIS</span>
+          </div>
+          <div class="rank-row">
+            <span class="rank-game">OVERWATCH</span>
+            <span class="rank-peak rank-ow">PLATINUM</span>
+            <span class="rank-status status-grind" data-i18n="ranks.grind">STILL GRINDING</span>
+          </div>
+          <div class="rank-row">
+            <span class="rank-game">CS2</span>
+            <span class="rank-peak rank-cs" data-i18n="ranks.csrank">ALLES &amp; NICHTS</span>
+            <span class="rank-status status-semi" data-i18n="ranks.semi">SEMI AUF EIS</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- ══════════ HOBBIES ══════════ -->
+      <section class="panel" id="hobbies">
+        <h2 class="panel-title"><span class="prompt">&gt;</span> <span data-i18n="hobbies.title">ls /irl/hobbys</span></h2>
+        <ul class="hobby-grid">
+          <li class="hobby"><span class="hobby-icon">⛰</span> <span data-i18n="hobbies.mtb">MOUNTAINBIKE</span></li>
+          <li class="hobby"><span class="hobby-icon">🏍</span> <span data-i18n="hobbies.moto">MOTORRAD</span></li>
+          <li class="hobby"><span class="hobby-icon">⛸</span> <span data-i18n="hobbies.ice">SCHLITTSCHUH</span></li>
+          <li class="hobby"><span class="hobby-icon">▣</span> <span data-i18n="hobbies.print">3D-DRUCK</span></li>
+          <li class="hobby"><span class="hobby-icon">✈</span> <span data-i18n="hobbies.fpv">FPV / KAMERADROHNEN + FOTOGRAFIE</span></li>
+          <li class="hobby"><span class="hobby-icon">◉</span> <span data-i18n="hobbies.more">NOCH VIEL MEHR RABBITHOLES…</span></li>
+        </ul>
+      </section>
+
+      <!-- ══════════ CONTACT ══════════ -->
+      <section class="panel" id="contact">
+        <h2 class="panel-title"><span class="prompt">&gt;</span> <span data-i18n="contact.title">ping verunglxckt</span></h2>
+        <div class="contact-row">
+          <span class="contact-label">MAIL</span>
+          <code class="contact-value" id="mail-slot" data-i18n="contact.decrypt">[ KLICKEN ZUM ENTSCHLÜSSELN ]</code>
+          <button class="copy-btn" type="button" data-copy="mail" data-i18n="contact.copy">COPY</button>
+        </div>
+        <div class="contact-row">
+          <span class="contact-label">STEAM</span>
+          <code class="contact-value">379859846</code>
+          <button class="copy-btn" type="button" data-copy="steam" data-i18n="contact.copy2">COPY</button>
+        </div>
+        <p class="contact-note" data-i18n="contact.note">// Friend-Code im Steam-Client unter „Freund hinzufügen“ eingeben</p>
+      </section>
+
+    </main>
+
+    <!-- ══════════ FOOTER ══════════ -->
+    <footer class="site-footer">
+      <div class="counter-box">
+        <span data-i18n="footer.visitors">BESUCHER</span>
+        <span class="counter" id="hit-counter">0000000</span>
+      </div>
+      <p class="footer-line" data-i18n="footer.viewed">optimiert für 1024×768 &amp; CRT-Monitore</p>
+      <p class="footer-line footer-dim">© 2000-2026 VERUNGLXCKT · <span data-i18n="footer.rights">kein Tracking, keine Cookies, keine Identität</span></p>
+    </footer>
+
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
