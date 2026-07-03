@@ -4,13 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="referrer" content="no-referrer">
-  <meta name="description" content="VERUNGLXCKT // gamer profile terminal">
+  <meta name="description" content="VERUNGLXCKT // netrunner profile terminal">
   <title>VERUNGLXCKT // profile.exe</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=VT323&family=Press+Start+2P&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Chakra+Petch:wght@400;500;600&family=Share+Tech+Mono&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='80' font-size='80' fill='%2339ff14'>X</text></svg>">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='80' font-size='80' fill='%23ff2ec8'>X</text></svg>">
 </head>
 <body>
 
@@ -19,35 +19,128 @@
     <pre id="boot-log"></pre>
   </div>
 
-  <!-- ══════════ CRT OVERLAYS ══════════ -->
+  <!-- ══════════ FX LAYERS ══════════ -->
+  <div class="fx-grid" aria-hidden="true"></div>
+  <canvas id="fx-rain" aria-hidden="true"></canvas>
+
+  <!-- night city skyline -->
+  <div class="fx-skyline" aria-hidden="true">
+    <svg viewBox="0 0 2400 260" preserveAspectRatio="xMidYMax slice" xmlns="http://www.w3.org/2000/svg">
+      <g id="city">
+        <g fill="#0a1220">
+          <rect x="0" y="120" width="60" height="140"/>
+          <rect x="70" y="60" width="50" height="200"/>
+          <rect x="130" y="150" width="45" height="110"/>
+          <rect x="185" y="90" width="65" height="170"/>
+          <rect x="260" y="170" width="40" height="90"/>
+          <rect x="310" y="40" width="55" height="220"/>
+          <rect x="375" y="130" width="50" height="130"/>
+          <rect x="435" y="80" width="45" height="180"/>
+          <rect x="490" y="160" width="60" height="100"/>
+          <rect x="560" y="55" width="50" height="205"/>
+          <rect x="620" y="140" width="45" height="120"/>
+          <rect x="675" y="100" width="55" height="160"/>
+          <rect x="740" y="170" width="60" height="90"/>
+        </g>
+        <g stroke="#0a1220" stroke-width="3">
+          <line x1="95" y1="60" x2="95" y2="30"/>
+          <line x1="337" y1="40" x2="337" y2="10"/>
+          <line x1="585" y1="55" x2="585" y2="25"/>
+        </g>
+        <g fill="#ff2ec8" fill-opacity="0.55">
+          <rect x="8" y="132" width="4" height="3"/>
+          <rect class="w-blink" style="--d:0s" x="20" y="132" width="4" height="3"/>
+          <rect x="40" y="150" width="4" height="3"/>
+          <rect x="8" y="170" width="4" height="3"/>
+          <rect x="30" y="190" width="4" height="3"/>
+          <rect x="78" y="70" width="4" height="3"/>
+          <rect class="w-blink" style="--d:1.2s" x="100" y="88" width="4" height="3"/>
+          <rect x="88" y="110" width="4" height="3"/>
+          <rect x="78" y="140" width="4" height="3"/>
+          <rect x="100" y="160" width="4" height="3"/>
+          <rect x="195" y="100" width="4" height="3"/>
+          <rect x="215" y="100" width="4" height="3"/>
+          <rect x="235" y="120" width="4" height="3"/>
+          <rect x="195" y="140" width="4" height="3"/>
+          <rect x="225" y="160" width="4" height="3"/>
+          <rect x="320" y="50" width="4" height="3"/>
+          <rect class="w-blink" style="--d:2.4s" x="340" y="66" width="4" height="3"/>
+          <rect x="320" y="90" width="4" height="3"/>
+          <rect x="350" y="110" width="4" height="3"/>
+          <rect x="443" y="90" width="4" height="3"/>
+          <rect x="460" y="108" width="4" height="3"/>
+          <rect x="443" y="130" width="4" height="3"/>
+          <rect x="570" y="64" width="4" height="3"/>
+          <rect class="w-blink" style="--d:3.1s" x="590" y="80" width="4" height="3"/>
+          <rect x="570" y="100" width="4" height="3"/>
+          <rect x="590" y="130" width="4" height="3"/>
+          <rect x="685" y="110" width="4" height="3"/>
+          <rect x="705" y="126" width="4" height="3"/>
+          <rect x="685" y="150" width="4" height="3"/>
+        </g>
+        <g fill="#00e5ff" fill-opacity="0.4">
+          <rect x="48" y="132" width="4" height="3"/>
+          <rect x="108" y="70" width="4" height="3"/>
+          <rect x="150" y="158" width="4" height="3"/>
+          <rect x="160" y="180" width="4" height="3"/>
+          <rect x="280" y="178" width="4" height="3"/>
+          <rect x="355" y="140" width="4" height="3"/>
+          <rect x="395" y="140" width="4" height="3"/>
+          <rect class="w-blink" style="--d:1.8s" x="415" y="160" width="4" height="3"/>
+          <rect x="505" y="168" width="4" height="3"/>
+          <rect x="640" y="148" width="4" height="3"/>
+          <rect x="755" y="178" width="4" height="3"/>
+        </g>
+        <g fill="#fcee0a" fill-opacity="0.35">
+          <rect x="30" y="210" width="4" height="3"/>
+          <rect x="205" y="120" width="4" height="3"/>
+          <rect class="w-blink" style="--d:4s" x="445" y="150" width="4" height="3"/>
+          <rect x="630" y="160" width="4" height="3"/>
+          <rect x="690" y="170" width="4" height="3"/>
+          <rect x="760" y="196" width="4" height="3"/>
+        </g>
+        <g fill="#ff2a55">
+          <circle class="beacon" style="--d:0s" cx="95" cy="28" r="3"/>
+          <circle class="beacon" style="--d:0.9s" cx="337" cy="8" r="3"/>
+          <circle class="beacon" style="--d:1.7s" cx="585" cy="23" r="3"/>
+        </g>
+      </g>
+      <use href="#city" x="800"/>
+      <use href="#city" x="1600"/>
+    </svg>
+  </div>
+
   <div class="crt-scanlines" aria-hidden="true"></div>
   <div class="crt-vignette" aria-hidden="true"></div>
+  <div class="fx-glitch" aria-hidden="true"></div>
 
-  <div class="page">
+  <!-- ══════════ TOP HUD BAR ══════════ -->
+  <header class="topbar">
+    <span class="sys-tag" data-i18n="sys.online">[ SYSTEM ONLINE ]</span>
+    <div class="ticker-wrap" aria-hidden="true">
+      <div class="ticker" id="ticker"></div>
+    </div>
+    <nav class="lang-switch" aria-label="Language">
+      <button id="lang-de" class="lang-btn" type="button">DE</button>
+      <span class="lang-sep">/</span>
+      <button id="lang-en" class="lang-btn" type="button">EN</button>
+    </nav>
+  </header>
 
-    <!-- ══════════ HEADER ══════════ -->
-    <header class="site-header">
-      <div class="header-top">
-        <span class="sys-tag" data-i18n="sys.online">[ SYSTEM ONLINE ]</span>
-        <nav class="lang-switch" aria-label="Language">
-          <button id="lang-de" class="lang-btn" type="button">DE</button>
-          <span class="lang-sep">/</span>
-          <button id="lang-en" class="lang-btn" type="button">EN</button>
-        </nav>
-      </div>
+  <div class="layout">
 
+    <!-- ══════════ HERO / IDENT ══════════ -->
+    <div class="panel id-card">
+      <span class="hud-label">// IDENT</span>
       <h1 class="glitch" data-text="VERUNGLXCKT">VERUNGLXCKT</h1>
       <p class="aka">aka <span class="aka-name">BERMSHRED</span> <span class="blink">▮</span></p>
+    </div>
 
-      <div class="ticker-wrap" aria-hidden="true">
-        <div class="ticker" id="ticker"></div>
-      </div>
-    </header>
+    <!-- ══════════ SIDEBAR ══════════ -->
+    <aside class="sidebar">
 
-    <main>
-
-      <!-- ══════════ STATS BAR ══════════ -->
-      <section class="stats-bar" id="stats">
+      <section class="panel stats-panel" id="stats">
+        <span class="hud-label">// VITALS</span>
         <div class="stat">
           <span class="stat-label" data-i18n="stats.age">AGE</span>
           <span class="stat-value">20</span>
@@ -66,14 +159,32 @@
         </div>
       </section>
 
+      <div class="panel uplink" aria-hidden="true">
+        <span class="hud-label">// NETSTAT</span>
+        <div class="uplink-row"><span>UPLINK</span><span class="uplink-ok">ENCRYPTED</span></div>
+        <div class="uplink-row"><span>TRACE</span><span class="uplink-ok">BLOCKED</span></div>
+        <div class="uplink-row"><span>LOC-MASK</span><span class="uplink-ok">ACTIVE</span></div>
+        <div class="uplink-row"><span>IDENTITY</span><span class="uplink-warn">NOT FOUND</span></div>
+      </div>
+
+    </aside>
+
+    <!-- ══════════ MAIN CONTENT ══════════ -->
+    <main class="content-grid">
+
       <!-- ══════════ BIO ══════════ -->
       <section class="panel" id="bio">
         <h2 class="panel-title"><span class="prompt">&gt;</span> <span data-i18n="bio.title">whoami</span></h2>
         <p class="panel-text" data-i18n="bio.text">
           Norddeutscher IT-Student mit Passion für Linux und Natur. Viel am PC
           (arbeits- und hobbybedingt), der Ausgleich läuft über MTB und
-          Motorradfahren. Ich habe zwar ein cooles 2-in-1-Notebook, schreibe aber
-          trotzdem lieber auf Papier. Mit meinem Rotring 600, versteht sich.
+          Motorradfahren. Ich appreciate hochwertige Dinge, die lange halten,
+          zum Beispiel einen guten Rotring 600.
+        </p>
+        <p class="panel-text" data-i18n="bio.text2">
+          Für die Zukunft strebe ich eine Karriere in der IT an, ein gesundes
+          Leben und vor allem, dass ich nie den Spaß am Mountainbiken verliere.
+          Seit 2,5 Jahren habe ich außerdem eine Freundin und bin sehr glücklich.
         </p>
       </section>
 
@@ -93,32 +204,42 @@
       </section>
 
       <!-- ══════════ RANKS ══════════ -->
-      <section class="panel" id="ranks">
+      <section class="panel span-full" id="ranks">
         <h2 class="panel-title"><span class="prompt">&gt;</span> <span data-i18n="ranks.title">./peak_ranks --comp</span></h2>
         <div class="rank-table">
           <div class="rank-row rank-head">
             <span data-i18n="ranks.game">GAME</span>
             <span data-i18n="ranks.peak">PEAK</span>
+            <span data-i18n="ranks.period">ZEITRAUM</span>
+            <span data-i18n="ranks.hours">STUNDEN</span>
             <span data-i18n="ranks.status">STATUS</span>
           </div>
           <div class="rank-row">
             <span class="rank-game">ROCKET LEAGUE</span>
             <span class="rank-peak rank-rl">CHAMP 2</span>
+            <span class="rank-period">2020-2023</span>
+            <span class="rank-hours">1.5K</span>
             <span class="rank-status status-ice" data-i18n="ranks.ice">AUF EIS</span>
           </div>
           <div class="rank-row">
             <span class="rank-game">VALORANT</span>
             <span class="rank-peak rank-valo">IMMORTAL 1</span>
+            <span class="rank-period">2020-2023</span>
+            <span class="rank-hours">2.5K</span>
             <span class="rank-status status-ice" data-i18n="ranks.ice2">AUF EIS</span>
           </div>
           <div class="rank-row">
             <span class="rank-game">OVERWATCH</span>
             <span class="rank-peak rank-ow">PLATINUM</span>
+            <span class="rank-period" data-i18n="ranks.owperiod">2025-HEUTE</span>
+            <span class="rank-hours">300</span>
             <span class="rank-status status-grind" data-i18n="ranks.grind">STILL GRINDING</span>
           </div>
           <div class="rank-row">
             <span class="rank-game">CS2</span>
             <span class="rank-peak rank-cs" data-i18n="ranks.csrank">ALLES &amp; NICHTS</span>
+            <span class="rank-period" data-i18n="ranks.csperiod">2018-HEUTE</span>
+            <span class="rank-hours">400</span>
             <span class="rank-status status-semi" data-i18n="ranks.semi">SEMI AUF EIS</span>
           </div>
         </div>
@@ -128,12 +249,14 @@
       <section class="panel" id="hobbies">
         <h2 class="panel-title"><span class="prompt">&gt;</span> <span data-i18n="hobbies.title">ls /irl/hobbys</span></h2>
         <ul class="hobby-grid">
-          <li class="hobby"><span class="hobby-icon">⛰</span> <span data-i18n="hobbies.mtb">MOUNTAINBIKE</span></li>
-          <li class="hobby"><span class="hobby-icon">🏍</span> <span data-i18n="hobbies.moto">MOTORRAD</span></li>
-          <li class="hobby"><span class="hobby-icon">⛸</span> <span data-i18n="hobbies.ice">SCHLITTSCHUH</span></li>
-          <li class="hobby"><span class="hobby-icon">▣</span> <span data-i18n="hobbies.print">3D-DRUCK</span></li>
-          <li class="hobby"><span class="hobby-icon">✈</span> <span data-i18n="hobbies.fpv">FPV / KAMERADROHNEN + FOTOGRAFIE</span></li>
-          <li class="hobby"><span class="hobby-icon">◉</span> <span data-i18n="hobbies.more">NOCH VIEL MEHR RABBITHOLES…</span></li>
+          <li><button class="hobby" type="button" data-hobby="mtb"><span class="hobby-icon">⛰</span> <span data-i18n="hobbies.mtb">MOUNTAINBIKE</span><span class="hobby-open">[+]</span></button></li>
+          <li><button class="hobby" type="button" data-hobby="moto"><span class="hobby-icon">🏍</span> <span data-i18n="hobbies.moto">MOTORRAD</span><span class="hobby-open">[+]</span></button></li>
+          <li><button class="hobby" type="button" data-hobby="ice"><span class="hobby-icon">⛸</span> <span data-i18n="hobbies.ice">SCHLITTSCHUH</span><span class="hobby-open">[+]</span></button></li>
+          <li><button class="hobby" type="button" data-hobby="print"><span class="hobby-icon">▣</span> <span data-i18n="hobbies.print">3D-DRUCK</span><span class="hobby-open">[+]</span></button></li>
+          <li><button class="hobby" type="button" data-hobby="fpv"><span class="hobby-icon">✈</span> <span data-i18n="hobbies.fpv">FPV / KAMERADROHNEN + FOTOGRAFIE</span><span class="hobby-open">[+]</span></button></li>
+          <li><button class="hobby" type="button" data-hobby="audio"><span class="hobby-icon">♫</span> <span data-i18n="hobbies.audio">AUDIO</span><span class="hobby-open">[+]</span></button></li>
+          <li><button class="hobby" type="button" data-hobby="rig"><span class="hobby-icon">⌨</span> <span data-i18n="hobbies.rig">PC SPECS</span><span class="hobby-open">[+]</span></button></li>
+          <li><button class="hobby" type="button" data-hobby="more"><span class="hobby-icon">◉</span> <span data-i18n="hobbies.more">NOCH VIEL MEHR RABBITHOLES…</span><span class="hobby-open">[+]</span></button></li>
         </ul>
       </section>
 
@@ -146,6 +269,11 @@
           <button class="copy-btn" type="button" data-copy="mail" data-i18n="contact.copy">COPY</button>
         </div>
         <div class="contact-row">
+          <span class="contact-label">DISCORD</span>
+          <code class="contact-value">verunglxckt</code>
+          <button class="copy-btn" type="button" data-copy="discord" data-i18n="contact.copy3">COPY</button>
+        </div>
+        <div class="contact-row">
           <span class="contact-label">STEAM</span>
           <code class="contact-value">379859846</code>
           <button class="copy-btn" type="button" data-copy="steam" data-i18n="contact.copy2">COPY</button>
@@ -155,17 +283,28 @@
 
     </main>
 
-    <!-- ══════════ FOOTER ══════════ -->
-    <footer class="site-footer">
-      <div class="counter-box">
-        <span data-i18n="footer.visitors">BESUCHER</span>
-        <span class="counter" id="hit-counter">0000000</span>
-      </div>
-      <p class="footer-line" data-i18n="footer.viewed">optimiert für 1024×768 &amp; CRT-Monitore</p>
-      <p class="footer-line footer-dim">© 2000-2026 VERUNGLXCKT · <span data-i18n="footer.rights">kein Tracking, keine Cookies, keine Identität</span></p>
-    </footer>
-
   </div>
+
+  <!-- ══════════ DOSSIER MODAL ══════════ -->
+  <div id="dossier" class="dossier-overlay" hidden>
+    <div class="dossier-card panel" role="dialog" aria-modal="true" aria-labelledby="dossier-title">
+      <button class="dossier-close" type="button" aria-label="Close">✕ ESC</button>
+      <span class="hud-label">// DOSSIER</span>
+      <h3 class="dossier-title" id="dossier-title"></h3>
+      <p class="dossier-file" id="dossier-file"></p>
+      <div class="dossier-body" id="dossier-body"></div>
+    </div>
+  </div>
+
+  <!-- ══════════ FOOTER ══════════ -->
+  <footer class="site-footer">
+    <div class="counter-box">
+      <span data-i18n="footer.visitors">BESUCHER</span>
+      <span class="counter" id="hit-counter">0000000</span>
+    </div>
+    <p class="footer-line" data-i18n="footer.viewed">optimiert für Neural-Link · zertifiziert für 16:9 &amp; 21:9</p>
+    <p class="footer-line footer-dim">© 2000-2026 VERUNGLXCKT · <span data-i18n="footer.rights">kein Tracking, keine Cookies, keine Identität</span></p>
+  </footer>
 
   <script src="js/main.js"></script>
 </body>
